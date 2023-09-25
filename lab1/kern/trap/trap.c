@@ -125,7 +125,7 @@ void interrupt_handler(struct trapframe *tf)
          * (4)判断打印次数，当打印次数为10时，调用<sbi.h>中的关机函数关机
          */
         clock_set_next_event(); // 发生这次时钟中断的时候，我们要设置下一次时钟中断
-        if (ticks++ % TICK_NUM == 0)
+        if (++ticks % TICK_NUM == 0)
         {
             // 打印一次
             print_ticks();
