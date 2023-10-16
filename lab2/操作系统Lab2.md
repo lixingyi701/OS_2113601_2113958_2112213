@@ -1,3 +1,5 @@
+# 操作系统Lab2
+
 首先对内存布局进行总体上的介绍：下面是pmm初始化后的内存布局，其中可用物理空间是从0x80000000到0x88000000(Challenge3中可以观察到)，但是涉及到虚拟地址映射的位置是从kernel开始的，kernel起始位置对应的虚拟地址是0xffffffffc0200000(对应物理地址是0x80200000)。具体地址都是通过在pmm.c文件中附加cprintf输出并进行观察得出。
 
 **注意**：下面没有包含opensbi的空间(0x80000000到0x80200000)，是因为这段是在M模式下完成的，还没有涉及到虚拟地址。而且这个布局仅适用于基础部分，在后续的buddy和slub中内存布局会发生变化。
@@ -28,13 +30,13 @@
 boot_page_table_sv39:
     # 0xffffffff_c0000000 map to 0x80000000 (1G)
     .zero 8 * 2
-    .quad (0x80000 << 10) | 0xcf  
+    .quad (0x80000 << 10) | 0xcf
     .zero 8 * 508
     # 设置最后一个页表项，PPN=0x80000，标志位 VRWXAD 均为 1
     .quad (0x80000 << 10) | 0xcf # VRWXAD
 ```
 
-## 练习1**：理解first-fit 连续物理内存分配算法**
+## 练习1：理解first-fit 连续物理内存分配算法
 
 ![img](https://nankai.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2FkMTUzMjBhZmI0ZDFjOWJmY2UxNDk0NDEyZDRkZTVfenVuU2hhVkVsbWZxa201U3hvckZQcHVkUFU5VjI5dThfVG9rZW46VDlKeWJ5cW5nb2tPNlZ4SFllNWNkZHRBbmxoXzE2OTc0NTIwNjU6MTY5NzQ1NTY2NV9WNA)
 
@@ -66,7 +68,7 @@ struct Page {
 
 first-fit算法的具体实现主要体现在具体初始化函数default_init_memmap()，分配页面函数default_alloc_pages()和 释放页面函数default_free_pages()中，下面对其分别进行分析：
 
-- void default_init_memmap(struct Page *base, size_t n) 
+- void default_init_memmap(struct Page *base, size_t n)
 
 传入空闲页面起始地址base和空闲页面数量n，初始化每个物理页面属性，然后将全部的可分配物理页视为一大块空闲块加入空闲表。
 
@@ -74,7 +76,7 @@ first-fit算法的具体实现主要体现在具体初始化函数default_init_m
 
 首次适配算法要求按照地址从小到大查找空间，所以空闲链表中的页面需要按照地址从小到大排序。这样，首次适配算法查询特定空闲空间的方法就是从链表头部开始找到第一个符合要求的空间，并将这个空间从空闲表中删除。空闲空间在分配完要求数量的物理页之后可能会有剩余，那么需要将剩余的部分作为新的空闲空间插入到原空间位置（这样才能保证空闲表中空闲空间地址递增）。
 
-- void default_free_pages(struct Page *base, size_t n) 
+- void default_free_pages(struct Page *base, size_t n)
 
 先通过遍历将页面属性调整为空闲状态，更改头页面（也就是base）的property值和总共空闲页的数量，再利用双向链表的前后驱函数探测前后页面的空闲状态。如果有空闲则进行页面合并，将尾页并入头页，修改对应页的property值，并从链表中摘除尾页。
 
@@ -90,7 +92,7 @@ first-fit算法的具体实现主要体现在具体初始化函数default_init_m
 
 测试部分是由源码中已经给好的测试函数，这里不进行赘述。
 
-## 练习2：**实现 Best-Fit 连续物理内存分配算法（需要编程）**
+## 练习2：实现 Best-Fit 连续物理内存分配算法（需要编程）
 
 ### 设计实现过程：
 
@@ -102,7 +104,7 @@ first-fit算法的具体实现主要体现在具体初始化函数default_init_m
     struct Page *page = NULL;
     list_entry_t *le = &free_list;
     size_t min_size = nr_free + 1;
-     /*LAB2 EXERCISE 2: YOUR CODE*/ 
+     /*LAB2 EXERCISE 2: YOUR CODE*/
     // 下面的代码是first-fit的部分代码，请修改下面的代码改为best-fit
     // 遍历空闲链表，查找满足需求的空闲页框
     // 如果找到满足需求的页面，记录该页面以及当前找到的最小连续空闲页框数量
@@ -130,7 +132,7 @@ first-fit算法的具体实现主要体现在具体初始化函数default_init_m
 
 测试部分是由源码中已经给好的测试函数，这里不进行赘述。
 
-## Challenge 1：**buddy system 分配算法**
+## Challenge 1：buddy system 分配算法
 
 首先根据[伙伴分配器的极简实现](https://coolshell.cn/articles/10427.html)理解其实现原理：
 
@@ -158,7 +160,7 @@ first-fit算法的具体实现主要体现在具体初始化函数default_init_m
 
 通过调用buddy2_alloc()函数获取目标页首的偏移量，通过对底层双向链表的的遍历找到以偏移量为起始的page**并用rec项记录**（以便恢复时的地址匹配），按照大于n的最小2的幂次进行页面遍历，更改页的Property状态位为0，并将页首的property值设置为n（以便恢复时进行遍历），返回页首。
 
-- void buddy_free_pages(struct Page* base, size_t n) 
+- void buddy_free_pages(struct Page* base, size_t n)
 
 遍历查找 rec 数组，当页首地址匹配时获取其对应的偏移量，先通过遍历找偏移量为 offset 的页，再由释放页数 n 再次遍历修改页的使用状态。完成对双向链表处理后，按照buddy system中的释放算法先对 longest=0 的二叉树节点进行修改，再递归合并伙伴节点，更改父节点longest值。最后消除此次的rec记录并减少分配块数的值。
 
@@ -179,7 +181,7 @@ first-fit算法的具体实现主要体现在具体初始化函数default_init_m
     free_page(p0);
     free_page(p1);
     free_page(p2);
-    
+
     p1=alloc_pages(500);
     p2=alloc_pages(510);
     cprintf("p1 %p\n",p1);//打印分配后返回的起始地址
@@ -187,13 +189,13 @@ first-fit算法的具体实现主要体现在具体初始化函数default_init_m
     free_pages(p1,250);
     free_pages(p2,510);
     free_pages(p1+250,250);//分两部分返回p1
-    
+
     p0=alloc_pages(1024);
     cprintf("p0 %p\n",p0);
     assert(p0 == p1);//该判断考虑p1分配1024左子树开头页地址,p2分配1024有右子树开头页地址，
                      //当两者全部释放后，p0的1024页面返回的地址应该和p1的地址一样
 
-    p1=alloc_pages(69);  
+    p1=alloc_pages(69);
     p2=alloc_pages(36);
     assert(p1+128==p2);//检查是否相邻，可手绘二叉树看出两者间的地址关系
 
@@ -236,7 +238,7 @@ static void buddy_init_memmap(struct Page *base, size_t n)
     }//记录一个二叉树节点需要sizeof(size_t)=8字节，如果根节点为256页的话，总共的节点个数为
     //256*2-1=511≈512个，那么这些节点的大小总共为 512*8=4096字节 正好为一页的大小
     //因此，当初始化中给定的页面少于512的话，建立根节点大小为256页的buddy system，并用1页记录二叉树节点。
-    
+
     else
     {
         full_tree_size = POWER_ROUND_DOWN(n);//小于a的最大的2^k
