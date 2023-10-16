@@ -9,7 +9,7 @@
 #include <string.h>
 #include <trap.h>
 #include <slub.h> // challenge2使用
-
+#include <dtb_decode.h>//challenge3使用
 int kern_init(void) __attribute__((noreturn));
 void grade_backtrace(void);
 
@@ -24,6 +24,11 @@ int kern_init(void)
 
     print_kerninfo();
 
+
+
+    fdt_header_t* fdt_header = (fdt_header_t*)(0x0000000082200000);//gdb's result
+    cprintf("\n \nChallenge3-check: \nfdt_magic:0x%08x\n",my_bswap32(fdt_header->magic));
+    select_dtb(fdt_header);
     // grade_backtrace();
     idt_init(); // init interrupt descriptor table
 
