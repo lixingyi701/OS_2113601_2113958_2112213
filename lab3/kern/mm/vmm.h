@@ -17,7 +17,7 @@ struct vma_struct
     struct mm_struct *vm_mm; // the set of vma using the same PDT
     uintptr_t vm_start;      // start addr of vma
     uintptr_t vm_end;        // end addr of vma, not include the vm_end itself
-    uint_t vm_flags;         // flags of vma
+    uint_t vm_flags;         // flags of vma，其实就是读、写、执行的属性
     list_entry_t list_link;  // linear list link which sorted by start addr of vma
 };
 
@@ -35,7 +35,7 @@ struct mm_struct
     struct vma_struct *mmap_cache; // current accessed vma, used for speed purpose
     pde_t *pgdir;                  // the PDT of these vma
     int map_count;                 // the count of these vma
-    void *sm_priv;                 // the private data for swap manager
+    void *sm_priv;                 // the private data for swap manager，存的都是sm的链表头
 };
 
 struct vma_struct *find_vma(struct mm_struct *mm, uintptr_t addr);

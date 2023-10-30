@@ -412,7 +412,8 @@ int do_pgfault(struct mm_struct *mm, uint_t error_code, uintptr_t addr)
      * THEN
      *    continue process
      */
-    // 5. 根据vma的属性确定要设置的页表项权限perm。如果vma的vm_flags中包含VM_WRITE标志，则设置写权限（PTE_W）
+    // 5. 根据vma的属性确定要设置的页表项权限perm
+    // 如果vma的vm_flags中包含VM_WRITE标志，则设置写权限（PTE_W）
     uint32_t perm = PTE_U;
     if (vma->vm_flags & VM_WRITE)
     {

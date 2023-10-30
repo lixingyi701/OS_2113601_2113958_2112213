@@ -41,8 +41,7 @@ int swap_init(void)
           panic("bad max_swap_offset %08x.\n", max_swap_offset);
      }
 
-     // 测试的时候使用时钟置换算法
-     sm = &swap_manager_lru; // use first in first out Page Replacement Algorithm
+     sm = &swap_manager_lru;
      int r = sm->init();
 
      if (r == 0)
