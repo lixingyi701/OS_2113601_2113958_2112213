@@ -1,0 +1,189 @@
+The system is: Linux - 5.15.90.1-microsoft-standard-WSL2 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lollikit/operating_system/labcodes/lab3/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/lollikit/operating_system/labcodes/lab3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0abdf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0abdf.dir/build.make CMakeFiles/cmTC_0abdf.dir/build
+gmake[1]: Entering directory '/home/lollikit/operating_system/labcodes/lab3/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o
+/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc   -v -o CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc
+Target: riscv64-unknown-elf
+Configured with: /scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/build/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-elf --host=x86_64-linux-gnu --prefix=/scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/install/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14 --disable-shared --disable-threads --enable-languages=c,c++ --without-system-zlib --enable-tls --with-newlib --with-sysroot=/scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/install/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --src=.././riscv-gcc --enable-checking=yes --enable-multilib --with-abi=lp64d --with-arch=rv64imafdc 'CFLAGS_FOR_TARGET=-Os  -mcmodel=medany'
+Thread model: single
+gcc version 8.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc' '-mabi=lp64d'
+ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/cc1 -quiet -v -imultilib rv64imafdc/lp64d -iprefix /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/ -isysroot /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=rv64imafdc -mabi=lp64d -auxbase-strip CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o -version -o /tmp/cczeICvy.s
+GNU C17 (GCC) version 8.1.0 (riscv64-unknown-elf)
+	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+ignoring duplicate directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include"
+ignoring nonexistent directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/usr/local/include"
+ignoring duplicate directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed"
+ignoring duplicate directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include"
+ignoring duplicate directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include
+ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed
+ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include
+End of search list.
+GNU C17 (GCC) version 8.1.0 (riscv64-unknown-elf)
+	compiled by GNU C version 5.4.0 20160609, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+Compiler executable checksum: f24a014d56799ae268b5fff3e52ef8b3
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc' '-mabi=lp64d'
+ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/as -v --traditional-format -march=rv64imafdc -mabi=lp64d -o CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o /tmp/cczeICvy.s
+GNU assembler version 2.30 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.30
+COMPILER_PATH=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/
+LIBRARY_PATH=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc' '-mabi=lp64d'
+Linking C executable cmTC_0abdf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0abdf.dir/link.txt --verbose=1
+/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc  -v CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o -o cmTC_0abdf 
+Using built-in specs.
+COLLECT_GCC=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc
+COLLECT_LTO_WRAPPER=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/lto-wrapper
+Target: riscv64-unknown-elf
+Configured with: /scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/build/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-elf --host=x86_64-linux-gnu --prefix=/scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/install/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14 --disable-shared --disable-threads --enable-languages=c,c++ --without-system-zlib --enable-tls --with-newlib --with-sysroot=/scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/install/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --src=.././riscv-gcc --enable-checking=yes --enable-multilib --with-abi=lp64d --with-arch=rv64imafdc 'CFLAGS_FOR_TARGET=-Os  -mcmodel=medany'
+Thread model: single
+gcc version 8.1.0 (GCC) 
+COMPILER_PATH=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/
+LIBRARY_PATH=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0abdf' '-march=rv64imafdc' '-mabi=lp64d'
+ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/collect2 -plugin /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/liblto_plugin.so -plugin-opt=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAW0IJ1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgloss -plugin-opt=-pass-through=-lgcc --sysroot=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf -melf64lriscv -o cmTC_0abdf /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/crt0.o /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtbegin.o -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0 -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o -lgcc --start-group -lc -lgloss --end-group -lgcc /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0abdf' '-march=rv64imafdc' '-mabi=lp64d'
+gmake[1]: Leaving directory '/home/lollikit/operating_system/labcodes/lab3/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include]
+    add: [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+    add: [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include]
+  end of search list found
+  collapse include dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/include]
+  collapse include dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+  collapse include dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/include]
+  implicit include dirs: [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/include;/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed;/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-elf-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/lollikit/operating_system/labcodes/lab3/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0abdf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0abdf.dir/build.make CMakeFiles/cmTC_0abdf.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/lollikit/operating_system/labcodes/lab3/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc   -v -o CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc]
+  ignore line: [Target: riscv64-unknown-elf]
+  ignore line: [Configured with: /scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/build/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-elf --host=x86_64-linux-gnu --prefix=/scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/install/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14 --disable-shared --disable-threads --enable-languages=c c++ --without-system-zlib --enable-tls --with-newlib --with-sysroot=/scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/install/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --src=.././riscv-gcc --enable-checking=yes --enable-multilib --with-abi=lp64d --with-arch=rv64imafdc 'CFLAGS_FOR_TARGET=-Os  -mcmodel=medany']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 8.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc' '-mabi=lp64d']
+  ignore line: [ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/cc1 -quiet -v -imultilib rv64imafdc/lp64d -iprefix /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/ -isysroot /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=rv64imafdc -mabi=lp64d -auxbase-strip CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o -version -o /tmp/cczeICvy.s]
+  ignore line: [GNU C17 (GCC) version 8.1.0 (riscv64-unknown-elf)]
+  ignore line: [	compiled by GNU C version 5.4.0 20160609  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [ignoring duplicate directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include"]
+  ignore line: [ignoring nonexistent directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/../../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include"]
+  ignore line: [ignoring duplicate directory "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include]
+  ignore line: [ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed]
+  ignore line: [ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 8.1.0 (riscv64-unknown-elf)]
+  ignore line: [	compiled by GNU C version 5.4.0 20160609  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+  ignore line: [Compiler executable checksum: f24a014d56799ae268b5fff3e52ef8b3]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc' '-mabi=lp64d']
+  ignore line: [ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/as -v --traditional-format -march=rv64imafdc -mabi=lp64d -o CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o /tmp/cczeICvy.s]
+  ignore line: [GNU assembler version 2.30 (riscv64-unknown-elf) using BFD version (GNU Binutils) 2.30]
+  ignore line: [COMPILER_PATH=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/]
+  ignore line: [LIBRARY_PATH=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o' '-c' '-march=rv64imafdc' '-mabi=lp64d']
+  ignore line: [Linking C executable cmTC_0abdf]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0abdf.dir/link.txt --verbose=1]
+  ignore line: [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc  -v CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o -o cmTC_0abdf ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/lto-wrapper]
+  ignore line: [Target: riscv64-unknown-elf]
+  ignore line: [Configured with: /scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/build/riscv-gnu-toolchain/riscv-gcc/configure --target=riscv64-unknown-elf --host=x86_64-linux-gnu --prefix=/scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/install/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14 --disable-shared --disable-threads --enable-languages=c c++ --without-system-zlib --enable-tls --with-newlib --with-sysroot=/scratch/palmer/work/20180627-toolchain_binaries/riscv-binary-tools/obj/x86_64-linux-ubuntu14/install/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf --with-native-system-header-dir=/include --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libgomp --disable-nls --src=.././riscv-gcc --enable-checking=yes --enable-multilib --with-abi=lp64d --with-arch=rv64imafdc 'CFLAGS_FOR_TARGET=-Os  -mcmodel=medany']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 8.1.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/bin/]
+  ignore line: [LIBRARY_PATH=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/:/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0abdf' '-march=rv64imafdc' '-mabi=lp64d']
+  link line: [ /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/collect2 -plugin /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/liblto_plugin.so -plugin-opt=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccAW0IJ1.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgloss -plugin-opt=-pass-through=-lgcc --sysroot=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf -melf64lriscv -o cmTC_0abdf /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/crt0.o /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtbegin.o -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0 -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib -L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o -lgcc --start-group -lc -lgloss --end-group -lgcc /home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtend.o]
+    arg [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../libexec/gcc/riscv64-unknown-elf/8.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccAW0IJ1.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgloss] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf] ==> ignore
+    arg [-melf64lriscv] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0abdf] ==> ignore
+    arg [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/crt0.o] ==> obj [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/crt0.o]
+    arg [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtbegin.o] ==> obj [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtbegin.o]
+    arg [-L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d] ==> dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d]
+    arg [-L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d] ==> dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d]
+    arg [-L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d] ==> dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d]
+    arg [-L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0] ==> dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0]
+    arg [-L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc] ==> dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc]
+    arg [-L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib] ==> dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib]
+    arg [-L/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib] ==> dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib]
+    arg [CMakeFiles/cmTC_0abdf.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--start-group] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgloss] ==> lib [gloss]
+    arg [--end-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtend.o] ==> obj [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtend.o]
+  collapse obj [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d/crt0.o] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib/rv64imafdc/lp64d/crt0.o]
+  collapse obj [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtbegin.o] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtbegin.o]
+  collapse obj [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtend.o] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtend.o]
+  collapse library dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d]
+  collapse library dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib/rv64imafdc/lp64d] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib/rv64imafdc/lp64d]
+  collapse library dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib/rv64imafdc/lp64d] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib/rv64imafdc/lp64d]
+  collapse library dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0]
+  collapse library dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc]
+  collapse library dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../lib/gcc/riscv64-unknown-elf/8.1.0/../../../../riscv64-unknown-elf/lib] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib]
+  collapse library dir [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/../riscv64-unknown-elf/lib] ==> [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib]
+  implicit libs: [gcc;c;gloss;gcc]
+  implicit objs: [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib/rv64imafdc/lp64d/crt0.o;/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtbegin.o;/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d/crtend.o]
+  implicit dirs: [/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d;/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib/rv64imafdc/lp64d;/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0;/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc;/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib]
+  implicit fwks: []
+
+

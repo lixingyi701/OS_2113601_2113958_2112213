@@ -1,0 +1,11 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "files.associations": {
+        "stdio.h": "c",
+        "vmm.h": "c",
+        "pmm.h": "c",
+        "swap.h": "c",
+        "swap_clock.h": "c",
+        "list.h": "c"
+    }
+}

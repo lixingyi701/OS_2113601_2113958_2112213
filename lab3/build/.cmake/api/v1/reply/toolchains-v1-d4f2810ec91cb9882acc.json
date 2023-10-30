@@ -1,0 +1,50 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/include",
+						"/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/include-fixed",
+						"/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0/rv64imafdc/lp64d",
+						"/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib/rv64imafdc/lp64d",
+						"/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc/riscv64-unknown-elf/8.1.0",
+						"/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/lib/gcc",
+						"/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/riscv64-unknown-elf/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"c",
+						"gloss",
+						"gcc"
+					]
+				},
+				"path" : "/home/lollikit/riscv64-unknown-elf-gcc-2018.07.0-x86_64-linux-ubuntu14/bin/riscv64-unknown-elf-gcc",
+				"version" : "8.1.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
